@@ -25,7 +25,8 @@ export default {
             output: 'bundle.css'
         }),
         resolve({
-            browser: true
+            browser: true, // respect the browser property in package.json
+            dedupe: ["svelte"] // avoids duplicating svelte files every time they are imported 
         }),
         !production && livereload({
             watch: 'public'
