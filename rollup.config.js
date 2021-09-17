@@ -30,7 +30,7 @@ export default {
             openPage: '/index.html',
             contentBase: './public',
             host: 'localhost',
-            port: 10001,
+            port: 3000,
         }),
     ]
 }
