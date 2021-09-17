@@ -12,6 +12,9 @@ export default {
         format: 'iife',
         file: 'public/build/bundle.js'
     },
+    watch: {
+        clearScreen: false
+    },
     plugins: [
         svelte({
             include: 'src/*.svelte'
@@ -28,6 +31,6 @@ export default {
             contentBase: './public',
             host: 'localhost',
             port: 10001,
-        })
+        }),
     ]
 }

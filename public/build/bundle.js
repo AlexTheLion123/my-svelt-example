@@ -260,7 +260,7 @@
     			h1 = element("h1");
     			t0 = text("Hello ");
     			t1 = text(/*name*/ ctx[0]);
-    			t2 = text("...");
+    			t2 = text("..");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
