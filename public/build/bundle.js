@@ -37,6 +37,12 @@
     function text(data) {
         return document.createTextNode(data);
     }
+    function attr(node, attribute, value) {
+        if (value == null)
+            node.removeAttribute(attribute);
+        else if (node.getAttribute(attribute) !== value)
+            node.setAttribute(attribute, value);
+    }
     function children(element) {
         return Array.from(element.childNodes);
     }
@@ -252,6 +258,7 @@
     function create_fragment(ctx) {
     	let h1;
     	let t0;
+    	let span;
     	let t1;
     	let t2;
 
@@ -259,14 +266,17 @@
     		c() {
     			h1 = element("h1");
     			t0 = text("Hello ");
+    			span = element("span");
     			t1 = text(/*name*/ ctx[0]);
     			t2 = text("..");
+    			attr(span, "class", "name svelte-esbmyd");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
     			append(h1, t0);
-    			append(h1, t1);
-    			append(h1, t2);
+    			append(h1, span);
+    			append(span, t1);
+    			append(span, t2);
     		},
     		p(ctx, [dirty]) {
     			if (dirty & /*name*/ 1) set_data(t1, /*name*/ ctx[0]);
@@ -304,3 +314,4 @@
     });
 
 }());
+//# sourceMappingURL=bundle.js.map
