@@ -272,10 +272,10 @@
     		c() {
     			nav = element("nav");
 
-    			nav.innerHTML = `<ul class="svelte-a0sk9j"><li class="svelte-a0sk9j">Home</li> 
-        <li class="svelte-a0sk9j">Foo</li> 
-        <li class="svelte-a0sk9j">Bar</li> 
-        <li class="svelte-a0sk9j">Reg</li></ul>`;
+    			nav.innerHTML = `<ul class="svelte-1nxw2ye"><li class="svelte-1nxw2ye">Home</li> 
+		<li class="svelte-1nxw2ye">Foo</li> 
+		<li class="svelte-1nxw2ye">Bar</li> 
+		<li class="svelte-1nxw2ye">Reg</li></ul>`;
 
     			t7 = space();
     			section = element("section");
@@ -284,7 +284,7 @@
     			span = element("span");
     			t9 = text(/*name*/ ctx[0]);
     			t10 = text("..");
-    			attr(nav, "class", "svelte-a0sk9j");
+    			attr(nav, "class", "svelte-1nxw2ye");
     			attr(span, "class", "name");
     		},
     		m(target, anchor) {

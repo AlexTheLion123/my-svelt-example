@@ -15,12 +15,14 @@
   "author": "Alex Urban",
   "license": "ISC",
   "devDependencies": {
+    "node-sass": "^6.0.1",
     "rollup": "^2.56.3",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-serve": "^1.1.0",
     "rollup-plugin-svelte": "^7.1.0",
     "sirv-cli": "^1.0.14",
-    "svelte": "^3.42.6"
+    "svelte": "^3.42.6",
+    "svelte-preprocess": "^4.9.4"
   },
   "dependencies": {
     "@rollup/plugin-node-resolve": "^13.0.4",
